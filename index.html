@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="/img/icon-color-pixels-16.png"> 
+    <link type="image/png" sizes="32x32" rel="icon" href="./img/icon-color-pixels-32.png">
+    <title>Retro-Bricks</title>
+</head>
+<body>
+    <div class="game">
+    <div>
+        <h1 class="title">
+            <span class="color1">R</span>
+            <span class="color2">E</span>
+            <span class="color3">T</span>
+            <span class="color4">R</span>
+            <span class="color5">O</span>
+            <span class="color6">-</span>
+            <span class="color1">B</span>
+            <span class="color2">R</span>
+            <span class="color3">I</span>
+            <span class="color4">C</span>
+            <span class="color5">K</span>
+            <span class="color6">S</span>
+        </h1>
+    </div>
+    <div class="left-container">
+        <div class="canvas-container">
+            <span>HOLD</span>
+            <div class="canvas">
+                <canvas id="canvas-hold"></canvas>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <span>CONTROLS</span>
+            <table class="canvas">
+                <tr>
+                    <td>LEFT</td>
+                    <td>- ←</td>
+                </tr>
+                <tr>
+                    <td>RIGHT</td>
+                    <td>- →</td>
+                </tr>
+                <tr>
+                    <td>ROTATE</td>
+                    <td>- ↑</td>
+                </tr>
+                <tr>
+                    <td>DOWN</td>
+                    <td>- ↓</td>
+                </tr>
+                <tr>
+                    <td>CATCH</td>
+                    <td>- C</td>
+                </tr>
+                <tr>
+                    <td>PAUSE</td>
+                    <td>- P</td>
+                </tr>
+                <tr>
+                    <td>RESUME</td>
+                    <td>- R</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <div class="canvas-container">
+            <span class="score-container">SCORE: <span id="score">0</span></span>
+            <div class="canvas">
+                <canvas id="canvas-tetris"></canvas>
+            </div>
+        </div>
+        <div class="right-container">
+        <div class="canvas-container">
+            <span>NEXT</span>
+            <div class="canvas">
+                <canvas id="canvas-next"></canvas>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <span>LEVEL</span>
+            <span class="canvas1">1</span>
+        </div>
+        <div class="canvas-container sound-container">
+            <span class="sound-title">SOUND</span>
+            <div class="toggle-container">
+                <span class="canvas">
+                <span class="toggle-label" id="audio-label">OFF</span>
+                <label class="toggle">
+                    <input type="checkbox" id="audio-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">ON</span>
+            </span>
+            </div>
+        </div>
+    </div>
+        <div class="menu" id="menu">
+            <span id="menu-title" ></span>
+            <div class="canvas2">
+            <button id="btn-start">NEW GAME</button>
+            <button id="btn-pause" style="display:none;">PAUSE</button>
+            <button id="btn-resume" style="display:none;">RESUME</button>
+        </div>
+        </div>
+        <div id="score-animation" class="score-animation" style="display: none;">+100pts</div>
+    </div>
+
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
