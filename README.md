@@ -23,7 +23,7 @@ Retro-Bricks es un juego de Tetris clásico desarrollado en JavaScript. El juego
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/Retro-Bricks.git
+   git clone https://github.com/Jetbear69/Retro-Bricks.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
